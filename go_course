@@ -1,0 +1,8 @@
+func Scan1() string {
+  in := bufio.NewReader(os.Stdin)
+  str, err := in.ReadString('\n')
+  if err != nil {
+    fmt.Println("Ошибка ввода: ", err)
+  }
+  return str
+}
